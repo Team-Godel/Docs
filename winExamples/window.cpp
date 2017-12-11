@@ -5,10 +5,7 @@ HINSTANCE instance;
 
 LRESULT CALLBACK windowsProcedure(HWND, UINT, WPARAM, LPARAM);
 
-int WinMain(HINSTANCE handlerInstance,
-                     HINSTANCE handlerPreviousInstance,
-                     LPSTR commandLine,
-                     int commandLineShow)
+int WinMain(HINSTANCE handlerInstance, HINSTANCE handlerPreviousInstance, LPSTR commandLine, int commandLineShow)
 {
     // Here is populated the WNDCLASSEX structure, just for make the same window
     WNDCLASSEX window;
@@ -31,24 +28,12 @@ int WinMain(HINSTANCE handlerInstance,
         return 1;
     }
 
-    HWND handler = CreateWindow("windowClass",
-                                "This is my Title",
-                                WS_OVERLAPPEDWINDOW,
-                                CW_USEDEFAULT,
-                                CW_USEDEFAULT,
-                                500,
-                                100,
-                                NULL,
-                                NULL,
-                                handlerInstance,
-                                NULL);
+    HWND handler = CreateWindow
+    ("windowClass", "This is my Title", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 500, 100, NULL, NULL, handlerInstance, NULL);
 
     if(!handler)
     {
-        MessageBox(NULL,
-                "Failed to create the window",
-                "Is just it, the window could not be created",
-                0);
+        MessageBox(NULL, "Failed to create the window", "Is just it, the window could not be created", 0);
         return 1;
     }
 
@@ -64,22 +49,14 @@ int WinMain(HINSTANCE handlerInstance,
     }
 };
 
-LRESULT CALLBACK windowsProcedure(HWND handler,
-                                  UINT message,
-                                  WPARAM wParam,
-                                  LPARAM lParam)
+
+LRESULT CALLBACK windowsProcedure(HWND handler, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)   // Events
     {
         case WM_CREATE:
-            HWND button = CreateWindow(TEXT("button"),
-                                       TEXT("LOL"),
-                                       WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,
-                                       0, 0, 100, 20,
-                                       handler,
-                                       (HMENU) button,
-                                       NULL,
-                                       NULL);
+            HWND button = CreateWindow
+            (TEXT("button"), TEXT("LOL"), WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, 100, 20, handler, (HMENU) button, NULL, NULL);
             SetMenu(handler, LoadMenu(instance, "ID_MENU"));  // Associate the menu with the window
             return 0;
         case WM_DESTROY:
