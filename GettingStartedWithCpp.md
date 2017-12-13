@@ -7,7 +7,7 @@ As I told you, one of the better ```C++``` features is just its complexity, whic
 #### Control and speed
 With ```C++``` you can control each instructions and well design your code, this enchance the speed of your program and it is the reason because many companies are using C++ in the core of their projects.
 #### Get support from many companies
-Many companies are betting on ```C++``` for its features, and are giving many resources for the progress of ```C++```. Companies like Google, for example, are continuously supporting the ```C++``` community, with guides, open source codes and even free software projects, driving to many developers to move to ```C++```. Do you know that a big part of Google Chrome is programmed on ```C++```? Like many Chromium projects. ```C++``` is always a good selection!
+Many companies are betting on ```C++``` for its features, and are giving many resources for the progress of ```C++```. Companies like Google, for example, are continuously supporting the ```C++``` community, with guides, open source codes and even free software projects, driving to many developers to move to ```C++```. Did you know that a big part of Google Chrome is programmed on ```C++```? Like many Chromium projects. ```C++``` is always a good selection!
 #### A very active comunity
 ```C++``` has a very active community of developers, writers, and people that are continuously supporting the ```C++``` development. You just need to type ```"C++"``` on Google and you will see the big quantity of development resources, like books, whole web sites, courses, forums, and so... Even there are whole IRC channels for ```C++```, like ```C++ basic```, ```C++ standard```, ```C++```, ```social C++```, and a lot more!
 #### C++ is fresh (and will continue to be)
