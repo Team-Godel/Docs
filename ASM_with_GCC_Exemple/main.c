@@ -7,9 +7,8 @@ int main(void)
     int b = 5;
 
     __asm__("movl\t%1, %0"
-
-         : "=&r" (a) : "r" (b)
-        );
+          : "=&r" (a) : "r" (b)
+    );
 
         printf("a = b = %d \n", a);
 
